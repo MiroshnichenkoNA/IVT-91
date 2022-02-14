@@ -1,0 +1,94 @@
+/*
+Created: 03.07.2021
+Modified: 03.07.2021
+Model: pr_model_физич
+Database: MySQL 8.0
+*/
+
+-- Create tables section -------------------------------------------------
+
+-- Table abonement
+
+CREATE TABLE `abonement`
+(
+  `number` Bigint NOT NULL,
+  `kolvo` Bigint,
+  `price` Bigint
+)
+;
+
+ALTER TABLE `abonement` ADD PRIMARY KEY (`number`)
+;
+
+-- Table klient
+
+CREATE TABLE `klient`
+(
+  `fam` Char(255),
+  `date` Date,
+  `adress` Char(255),
+  `number_fhone` Char(11),
+  `number` Bigint NOT NULL
+)
+;
+
+ALTER TABLE `klient` ADD PRIMARY KEY (`number`)
+;
+
+-- Table record
+
+CREATE TABLE `record`
+(
+  `name_group` Char(255) NOT NULL,
+  `date_zan` Date,
+  `time_zan` Bigint,
+  `number` Bigint NOT NULL
+)
+;
+
+ALTER TABLE `record` ADD PRIMARY KEY (`name_group`, `number`)
+;
+
+-- Table group
+
+CREATE TABLE `group`
+(
+  `zanyatie` Char(255),
+  `name_group` Char(255) NOT NULL,
+  `id` Bigint NOT NULL,
+  `number` Bigint NOT NULL
+)
+;
+
+ALTER TABLE `group` ADD PRIMARY KEY (`name_group`, `id`, `number`)
+;
+
+-- Table instructor
+
+CREATE TABLE `instructor`
+(
+  `id` Bigint NOT NULL,
+  `fam_i` Char(255) NOT NULL,
+  `spec` Char(255),
+  `nom_fhone_t` Char(11),
+  `mail` Char(255)
+)
+;
+
+ALTER TABLE `instructor` ADD PRIMARY KEY (`id`)
+;
+
+-- Create foreign keys (relationships) section -------------------------------------------------
+
+ALTER TABLE `klient` ADD CONSTRAINT `Relationship1` FOREIGN KEY (`number`) REFERENCES `abonement` (`number`) ON DELETE CASCADE ON UPDATE CASCADE
+;
+
+ALTER TABLE `group` ADD CONSTRAINT `Relationship3` FOREIGN KEY (`name_group`, `number`) REFERENCES `record` (`name_group`, `number`) ON DELETE CASCADE ON UPDATE CASCADE
+;
+
+ALTER TABLE `group` ADD CONSTRAINT `Relationship4` FOREIGN KEY (`id`) REFERENCES `instructor` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
+;
+
+ALTER TABLE `record` ADD CONSTRAINT `Relationship5` FOREIGN KEY (`number`) REFERENCES `klient` (`number`) ON DELETE CASCADE ON UPDATE CASCADE
+;
+
