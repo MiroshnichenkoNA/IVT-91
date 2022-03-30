@@ -1,0 +1,173 @@
+\hypertarget{class_dox___test_1_1_load___army}{}\doxysection{Класс Dox\+\_\+\+Test.\+Load\+\_\+\+Army}
+\label{class_dox___test_1_1_load___army}\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+
+
+Класс для снаряжения армии.  
+
+
+Граф наследования\+:Dox\+\_\+\+Test.\+Load\+\_\+\+Army\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dox___test_1_1_load___army}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dox___test_1_1_load___army_a4453f3ba6a07963007503665c8667f4d}{Prepare\+\_\+\+Weapons}} (\mbox{\hyperlink{interface_dox___test_1_1_weapon}{Weapon}} weapon)
+\begin{DoxyCompactList}\small\item\em Метод, устанавливающий кол-\/во оружия. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dox___test_1_1_load___army_ac0405dab3f713db17c7238c585c4218e}{Prepare\+\_\+\+Soldiers}} (\mbox{\hyperlink{interface_dox___test_1_1_soldiers}{Soldiers}} soldier)
+\begin{DoxyCompactList}\small\item\em Метод, устанавливающий кол-\/во Солдат. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dox___test_1_1_load___army_a486c4c7b6dfc9954f683804e8cefbff1}{Init}} (\mbox{\hyperlink{interface_dox___test_1_1_weapon}{Weapon}} \mbox{\hyperlink{class_dox___test_1_1_load___army_aa65eef29139583f9cac8a4fd0b518ccf}{weapons}}, \mbox{\hyperlink{interface_dox___test_1_1_soldiers}{Soldiers}} \mbox{\hyperlink{class_dox___test_1_1_load___army_a3907e6b2921abbc2b9be0650734e8a0e}{soldiers}})
+\begin{DoxyCompactList}\small\item\em Метод для инициализации всех полей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dox___test_1_1_load___army_a0f6783d344704f6bb9d8c9b93a122e55}{Use}} ()
+\begin{DoxyCompactList}\small\item\em Метод, реализующий задачу, соответствующую заданной команде. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dox___test_1_1_load___army_a4e04968a680e36bb67c50827c6427e60}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Метод, обновляющий состояние обхектов. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dox___test_1_1_load___army_a7326615cbefe32793e3dd3c4c72b1edb}{Next\+Launch}} ()
+\begin{DoxyCompactList}\small\item\em Метод, увеличивающий номер рейса. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dox___test_1_1_load___army_a8bd2878f9701f517dd6186271cfff547}{Prev\+Launch}} ()
+\begin{DoxyCompactList}\small\item\em Метод, уменьшающий номер рейса. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_dox___test_1_1_load___army_ab4cb5e4dbd7c9a62048e6fc6352231a4}{launch}}
+\begin{DoxyCompactList}\small\item\em Текущий рейс. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_dox___test_1_1_weapon}{Weapon}} \mbox{\hyperlink{class_dox___test_1_1_load___army_aa65eef29139583f9cac8a4fd0b518ccf}{weapons}}
+\begin{DoxyCompactList}\small\item\em Кол-\/во оружия. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_dox___test_1_1_soldiers}{Soldiers}} \mbox{\hyperlink{class_dox___test_1_1_load___army_a3907e6b2921abbc2b9be0650734e8a0e}{soldiers}}
+\begin{DoxyCompactList}\small\item\em Колв-\/о солдат. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для снаряжения армии. 
+
+Описывает снаряжение войска, включает в себя один объект, реализующий интерфейс оружия, и один объект, реализующий инферфейс солдат. Также имеет поле рейса отправки. ~\newline
+ 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_a486c4c7b6dfc9954f683804e8cefbff1}\label{class_dox___test_1_1_load___army_a486c4c7b6dfc9954f683804e8cefbff1}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!Init@{Init}}
+\index{Init@{Init}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_dox___test_1_1_weapon}{Weapon}}}]{weapons,  }\item[{\mbox{\hyperlink{interface_dox___test_1_1_soldiers}{Soldiers}}}]{soldiers }\end{DoxyParamCaption})}
+
+
+
+Метод для инициализации всех полей. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em weapons} & Объект, реализующий интерфейс оружия.\\
+\hline
+{\em soldiers} & Объект, реализующий интерфейс солдат.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_a7326615cbefe32793e3dd3c4c72b1edb}\label{class_dox___test_1_1_load___army_a7326615cbefe32793e3dd3c4c72b1edb}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!NextLaunch@{NextLaunch}}
+\index{NextLaunch@{NextLaunch}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{NextLaunch()}{NextLaunch()}}
+{\footnotesize\ttfamily void Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+Next\+Launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, увеличивающий номер рейса. 
+
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_ac0405dab3f713db17c7238c585c4218e}\label{class_dox___test_1_1_load___army_ac0405dab3f713db17c7238c585c4218e}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!Prepare\_Soldiers@{Prepare\_Soldiers}}
+\index{Prepare\_Soldiers@{Prepare\_Soldiers}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{Prepare\_Soldiers()}{Prepare\_Soldiers()}}
+{\footnotesize\ttfamily void Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+Prepare\+\_\+\+Soldiers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_dox___test_1_1_soldiers}{Soldiers}}}]{soldier }\end{DoxyParamCaption})}
+
+
+
+Метод, устанавливающий кол-\/во Солдат. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em soldier} & Объект, реализующий интерфейс солдат.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_a4453f3ba6a07963007503665c8667f4d}\label{class_dox___test_1_1_load___army_a4453f3ba6a07963007503665c8667f4d}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!Prepare\_Weapons@{Prepare\_Weapons}}
+\index{Prepare\_Weapons@{Prepare\_Weapons}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{Prepare\_Weapons()}{Prepare\_Weapons()}}
+{\footnotesize\ttfamily void Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+Prepare\+\_\+\+Weapons (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_dox___test_1_1_weapon}{Weapon}}}]{weapon }\end{DoxyParamCaption})}
+
+
+
+Метод, устанавливающий кол-\/во оружия. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em weapon} & Объект, реализующий интерфейс оружия.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_a8bd2878f9701f517dd6186271cfff547}\label{class_dox___test_1_1_load___army_a8bd2878f9701f517dd6186271cfff547}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!PrevLaunch@{PrevLaunch}}
+\index{PrevLaunch@{PrevLaunch}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{PrevLaunch()}{PrevLaunch()}}
+{\footnotesize\ttfamily void Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+Prev\+Launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, уменьшающий номер рейса. 
+
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_a4e04968a680e36bb67c50827c6427e60}\label{class_dox___test_1_1_load___army_a4e04968a680e36bb67c50827c6427e60}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!Reset@{Reset}}
+\index{Reset@{Reset}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, обновляющий состояние обхектов. 
+
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_a0f6783d344704f6bb9d8c9b93a122e55}\label{class_dox___test_1_1_load___army_a0f6783d344704f6bb9d8c9b93a122e55}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!Use@{Use}}
+\index{Use@{Use}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{Use()}{Use()}}
+{\footnotesize\ttfamily void Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, реализующий задачу, соответствующую заданной команде. 
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_ab4cb5e4dbd7c9a62048e6fc6352231a4}\label{class_dox___test_1_1_load___army_ab4cb5e4dbd7c9a62048e6fc6352231a4}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!launch@{launch}}
+\index{launch@{launch}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{launch}{launch}}
+{\footnotesize\ttfamily int Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+launch\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Текущий рейс. 
+
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_a3907e6b2921abbc2b9be0650734e8a0e}\label{class_dox___test_1_1_load___army_a3907e6b2921abbc2b9be0650734e8a0e}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!soldiers@{soldiers}}
+\index{soldiers@{soldiers}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{soldiers}{soldiers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_dox___test_1_1_soldiers}{Soldiers}} Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+soldiers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Колв-\/о солдат. 
+
+\mbox{\Hypertarget{class_dox___test_1_1_load___army_aa65eef29139583f9cac8a4fd0b518ccf}\label{class_dox___test_1_1_load___army_aa65eef29139583f9cac8a4fd0b518ccf}} 
+\index{Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}!weapons@{weapons}}
+\index{weapons@{weapons}!Dox\_Test.Load\_Army@{Dox\_Test.Load\_Army}}
+\doxysubsubsection{\texorpdfstring{weapons}{weapons}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_dox___test_1_1_weapon}{Weapon}} Dox\+\_\+\+Test.\+Load\+\_\+\+Army.\+weapons\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Кол-\/во оружия. 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/newstuff/\+QA\+\_\+\+Lab3\+\_\+\+Miroshnichenko/\+Code/\mbox{\hyperlink{_class1_8cs}{Class1.\+cs}}\end{DoxyCompactItemize}
