@@ -127,6 +127,13 @@ namespace GameLibrary
                             flag = false;
                         }
                     }
+                    if (field[0, 2] == field[1, 1] && field[1, 1] == field[2, 0])
+                    {
+                        if (field[0, 2] != '*')
+                        {
+                            flag = false;
+                        }
+                    }
                 }
             }
             return flag;
