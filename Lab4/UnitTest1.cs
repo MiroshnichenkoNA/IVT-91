@@ -49,5 +49,24 @@ namespace GameUnitTests
             char expected = 'X';
             Assert.AreEqual(expected, g);
         }
+
+        [TestMethod]
+        public void TestMethod_FlagCheck()
+        {
+            Class1 Field = new Class1();
+            Field.Create_Field();
+            Field.Insert_Element('X', 1, 1);
+            Field.Insert_Element('X', 2, 1);
+            Field.Insert_Element('X', 3, 1);
+            Field.Insert_Element('X', 1, 2);
+            Field.Insert_Element('X', 2, 2);
+            Field.Insert_Element('X', 3, 2);
+            Field.Insert_Element('X', 1, 3);
+            Field.Insert_Element('X', 2, 3);
+            Field.Insert_Element('X', 3, 3);
+            bool expected = false;
+            bool f = Field.Flag_Check();
+            Assert.AreEqual(expected, f);
+        }
     }
 }
