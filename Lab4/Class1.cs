@@ -49,7 +49,11 @@ namespace GameLibrary
             {
                 for (int j = 0; j < 3; j++)
                 {
+                    if (field[y - 1, x - 1] == '*')
+                    {
                         field[y - 1, x - 1] = elem;
+                    }
+                    else { };
                 }
             }
         }
