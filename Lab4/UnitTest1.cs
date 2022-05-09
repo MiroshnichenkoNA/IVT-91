@@ -12,19 +12,19 @@ namespace GameUnitTests
             Class1 Field = new Class1();
             Assert.IsNotNull(Field);
         }
-    }
 
-    [TestMethod]
-    public void TestMethod_FieldCreation()
-    {
-        Class1 Field = new Class1();
-        Field.Create_Field();
-        char[,] expected = new char[,] { { '*', '*', '*' }, { '*', '*', '*' }, { '*', '*', '*' } };
-        for (int i = 0; i < 3; i++)
+        [TestMethod]
+        public void TestMethod_FieldCreation()
         {
-            for (int j = 0; j < 3; j++)
+            Class1 Field = new Class1();
+            Field.Create_Field();
+            char[,] expected = new char[,] { { '*', '*', '*' }, { '*', '*', '*' }, { '*', '*', '*' } };
+            for (int i = 0; i < 3; i++)
             {
-                Assert.AreEqual(expected[j, i], Field.field[j, i]);
+                for (int j = 0; j < 3; j++)
+                {
+                    Assert.AreEqual(expected[j, i], Field.field[j, i]);
+                }
             }
         }
     }
