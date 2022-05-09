@@ -12,5 +12,15 @@ namespace GameLibrary
         public int counter = 1;
         public int player = 1;
         bool flag = true;
+        public void Create_Field()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    field[i, j] = '*';
+                }
+            }
+        }
     }
 }
