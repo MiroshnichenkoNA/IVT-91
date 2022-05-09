@@ -107,5 +107,18 @@ namespace GameUnitTests
             bool f = Field.Game_End();
             Assert.AreEqual(expected, f);
         }
+
+        [TestMethod]
+        public void TestMethod_GameEnd_ColumnWin()
+        {
+            Class1 Field = new Class1();
+            Field.Create_Field();
+            Field.Insert_Element('X', 3, 1);
+            Field.Insert_Element('X', 3, 2);
+            Field.Insert_Element('X', 3, 3);
+            bool expected = false;
+            bool f = Field.Game_End();
+            Assert.AreEqual(expected, f);
+        }
     }
 }
