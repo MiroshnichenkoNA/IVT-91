@@ -71,5 +71,23 @@ namespace GameLibrary
             if (game_counter == 0) flag = false;
             return flag;
         }
+
+        public bool Game_End()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (field[0, 0] == field[0, 1] && field[0, 1] == field[0, 2])
+                    {
+                        if (field[0, 0] != '*')
+                        {
+                            flag = false;
+                        }
+                    }
+                }
+            }
+            return flag;
+        }
     }
 }
