@@ -27,5 +27,15 @@ namespace GameUnitTests
                 }
             }
         }
+        [TestMethod]
+        public void TestMethod_ElementInsert()
+        {
+            Class1 Field = new Class1();
+            Field.Create_Field();
+            Field.Insert_Element('X', 1, 1);
+            char g = Field.field[0, 0];
+            char expected = 'X';
+            Assert.AreEqual(expected, g);
+        }
     }
 }
